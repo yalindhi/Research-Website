@@ -202,6 +202,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:999;height:var(--nav-h);backgrou
 .mc-role{font-size:.78rem;color:var(--muted);margin:.4rem 0 .7rem;line-height:1.55}
 .mc-id{font-family:var(--mono);font-size:.72rem;color:var(--steel-light);margin-bottom:.3rem}
 .mc-email{font-size:.78rem;color:var(--teal);text-decoration:none}
+.mc-phone{display:block;margin-top:.3rem;font-size:.78rem;color:var(--steel);text-decoration:none}
+.mc-phone:hover{color:var(--amber-dark)}
 @media(max-width:900px){.sup-row,.member-grid{grid-template-columns:1fr}}
 
 /* ===== DOWNLOADS ===== */
@@ -249,6 +251,19 @@ nav{position:fixed;top:0;left:0;right:0;z-index:999;height:var(--nav-h);backgrou
 .c-card h5{font-family:var(--display);font-size:.98rem;margin:.5rem 0 .3rem}
 .c-card a,.c-card p{font-size:.83rem;color:#B7BEC5}
 .c-card a{text-decoration:underline;text-decoration-color:rgba(255,255,255,.3)}
+.contact-form{margin-top:2.4rem;border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:2rem;background:rgba(255,255,255,.04)}
+.contact-form h3{font-family:var(--display);font-size:1.2rem;margin-bottom:1.4rem}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
+.form-grid .full{grid-column:1/-1}
+.contact-form label{display:block;font-family:var(--mono);font-size:.7rem;color:var(--amber);letter-spacing:.04em;margin-bottom:.4rem}
+.contact-form input,.contact-form textarea{width:100%;font-family:var(--body);font-size:.92rem;color:#fff;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:.8rem 1rem}
+.contact-form input::placeholder,.contact-form textarea::placeholder{color:#7C8998}
+.contact-form textarea{min-height:140px;resize:vertical}
+.contact-form button{margin-top:1.3rem;border:none;cursor:pointer;font-family:var(--body)}
+.contact-form button:disabled{opacity:.6;cursor:wait}
+.form-status{margin-top:1rem;font-size:.88rem;min-height:1.3rem}
+.form-status.ok{color:#8FC595}.form-status.err{color:#E8897F}
+@media(max-width:700px){.form-grid{grid-template-columns:1fr}}
 footer{background:#131416;color:#767E85;padding:2rem;text-align:center;font-size:.78rem}
 footer b{color:#B7BEC5}
 @media(max-width:900px){.contact-grid{grid-template-columns:1fr}}
@@ -604,49 +619,49 @@ footer b{color:#B7BEC5}
           <div class="doc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/></svg></div>
           <div><h5>Project Charter Document</h5><span>Group · Semester 1</span></div>
         </div>
-        <a href="https://drive.google.com/drive/folders/1gJ-Ugm6S8s-JXvY0I67LTIHYWW7YfUpS?usp=drive_link" target="_blank" class="doc-btn">View Folder</a>
+        <a href="https://drive.google.com/drive/folders/1TUNTQaYpySqRwFtUVGLyYWlqGVHHbAn5?usp=drive_link" target="_blank" class="doc-btn">View Folder</a>
       </div>
       <div class="doc-row">
         <div class="doc-left">
           <div class="doc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/></svg></div>
           <div><h5>Research Paper</h5><span>Group · Final</span></div>
         </div>
-        <a href="https://drive.google.com/drive/folders/1gJ-Ugm6S8s-JXvY0I67LTIHYWW7YfUpS?usp=drive_link" target="_blank" class="doc-btn">View Paper</a>
+        <a href="https://drive.google.com/drive/folders/1RrpviNfzSs87-RedgMAU6775_oBKyTNX?usp=drive_link" target="_blank" class="doc-btn">View Paper</a>
       </div>
       <div class="doc-row">
         <div class="doc-left">
           <div class="doc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/></svg></div>
           <div><h5>Proposal — Smart Task Management System</h5><span>Y.S. Rathnayake · Individual</span></div>
         </div>
-        <a href="https://drive.google.com/drive/folders/1gJ-Ugm6S8s-JXvY0I67LTIHYWW7YfUpS?usp=drive_link" target="_blank" class="doc-btn">View Proposal</a>
+        <a href="https://drive.google.com/drive/folders/1duVvvBQcW6NHlUSWp4YYeYK-MjFpxaBK?usp=drive_link" target="_blank" class="doc-btn">View Proposal</a>
       </div>
       <div class="doc-row">
         <div class="doc-left">
           <div class="doc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/></svg></div>
           <div><h5>Proposal — Adaptive Skill Development Tracker</h5><span>K.Y.H. Dalpathadu · Individual</span></div>
         </div>
-        <a href="https://drive.google.com/drive/folders/1gJ-Ugm6S8s-JXvY0I67LTIHYWW7YfUpS?usp=drive_link" target="_blank" class="doc-btn">View Proposal</a>
+        <a href="https://drive.google.com/drive/folders/1duVvvBQcW6NHlUSWp4YYeYK-MjFpxaBK?usp=drive_link" target="_blank" class="doc-btn">View Proposal</a>
       </div>
       <div class="doc-row">
         <div class="doc-left">
           <div class="doc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/></svg></div>
           <div><h5>Proposal — Adaptive Deadline Risk Predictor</h5><span>K.S.S. Rajapaksha · Individual</span></div>
         </div>
-        <a href="https://drive.google.com/drive/folders/1gJ-Ugm6S8s-JXvY0I67LTIHYWW7YfUpS?usp=drive_link" target="_blank" class="doc-btn">View Proposal</a>
+        <a href="https://drive.google.com/drive/folders/1duVvvBQcW6NHlUSWp4YYeYK-MjFpxaBK?usp=drive_link" target="_blank" class="doc-btn">View Proposal</a>
       </div>
       <div class="doc-row">
         <div class="doc-left">
           <div class="doc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
           <div><h5>Assessment &amp; Progress Checklists</h5><span>Individual · Sem 1 &amp; Sem 2</span></div>
         </div>
-        <a href="https://drive.google.com/drive/folders/1gJ-Ugm6S8s-JXvY0I67LTIHYWW7YfUpS?usp=drive_link" target="_blank" class="doc-btn">Access Checklists</a>
+        <a href="https://drive.google.com/drive/folders/1eil1sK9eku7itTWDufAuH3NNUfi5e1Wy?usp=drive_link" target="_blank" class="doc-btn">Access Checklists</a>
       </div>
       <div class="doc-row">
         <div class="doc-left">
           <div class="doc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2Z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7Z"/></svg></div>
           <div><h5>Final Research Report</h5><span>Pending · Semester 2</span></div>
         </div>
-        <a href="https://drive.google.com/drive/folders/1gJ-Ugm6S8s-JXvY0I67LTIHYWW7YfUpS?usp=drive_link" target="_blank" class="doc-btn">View Report</a>
+        <a href="https://drive.google.com/drive/folders/1MJiLDBmisn-jJC43ace1QMo_3ZZq34Jf?usp=drive_link" target="_blank" class="doc-btn">View Report</a>
       </div>
     </div>
   </div>
@@ -668,28 +683,28 @@ footer b{color:#B7BEC5}
           <div class="doc-icon pi-amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
           <div><h5>Project Proposal Presentation</h5><span>Semester 1 · Research problem, gap identification, and proposed three-component AI solution overview.</span></div>
         </div>
-        <a href="https://drive.google.com/drive/folders/1gJ-Ugm6S8s-JXvY0I67LTIHYWW7YfUpS?usp=drive_link" target="_blank" class="doc-btn">View Slides</a>
+        <a href="https://drive.google.com/drive/folders/11HqtpKpkZgdw6KPrWUy3lX3UOm-YSctD?usp=drive_link" target="_blank" class="doc-btn">View Slides</a>
       </div>
       <div class="doc-row">
         <div class="doc-left">
           <div class="doc-icon pi-teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
           <div><h5>Progress Presentation 1</h5><span>Semester 1 · Component architecture, early prototypes, and initial dataset preparation across all three subsystems.</span></div>
         </div>
-        <a href="https://drive.google.com/drive/folders/1gJ-Ugm6S8s-JXvY0I67LTIHYWW7YfUpS?usp=drive_link" target="_blank" class="doc-btn">View Slides</a>
+        <a href="https://drive.google.com/drive/folders/1RGE96gi0LQCdCtLU4yD4YgdhnYunNM9_?usp=drive_link" target="_blank" class="doc-btn">View Slides</a>
       </div>
       <div class="doc-row">
         <div class="doc-left">
           <div class="doc-icon pi-rust"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
           <div><h5>Progress Presentation 2</h5><span>Semester 2 · 90%+ platform — all three AI components integrated with live demos and performance metrics.</span></div>
         </div>
-        <a href="https://drive.google.com/drive/folders/1gJ-Ugm6S8s-JXvY0I67LTIHYWW7YfUpS?usp=drive_link" target="_blank" class="doc-btn">View Slides</a>
+        <a href="https://drive.google.com/drive/folders/1xBjY5ClgpOgefx3GdIWANm61K1IL0J4D?usp=drive_link" target="_blank" class="doc-btn">View Slides</a>
       </div>
       <div class="doc-row">
         <div class="doc-left">
           <div class="doc-icon pi-sage"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
           <div><h5>Final Presentation</h5><span>Semester 2 · Complete system showcase with evaluation results and future roadmap.</span></div>
         </div>
-        <a href="https://drive.google.com/drive/folders/1gJ-Ugm6S8s-JXvY0I67LTIHYWW7YfUpS?usp=drive_link" target="_blank" class="doc-btn">View Slides</a>
+        <a href="https://drive.google.com/drive/folders/17QMQDxwhnw1C95e6yz52pdQHO4iAGC98?usp=drive_link" target="_blank" class="doc-btn">View Slides</a>
       </div>
     </div>
   </div>
@@ -734,6 +749,7 @@ footer b{color:#B7BEC5}
         <div class="mc-role">Adaptive Deadline Risk Predictor — risk classification, feature engineering, explainability</div>
         <div class="mc-id">IT22296382</div>
         <a class="mc-email" href="mailto:it22296382@my.sliit.lk">it22296382@my.sliit.lk</a>
+        <a class="mc-phone" href="tel:+94776855942">+94 77 685 5942</a>
       </div>
       <div class="member-card">
         <div class="mc-ava mc-2">YR</div>
@@ -741,6 +757,7 @@ footer b{color:#B7BEC5}
         <div class="mc-role">Smart Task Management System — hybrid prioritization, OR-Tools scheduling</div>
         <div class="mc-id">IT22917652</div>
         <a class="mc-email" href="mailto:it22917652@my.sliit.lk">it22917652@my.sliit.lk</a>
+        <a class="mc-phone" href="tel:+94760538789">+94 76 053 8789</a>
       </div>
       <div class="member-card">
         <div class="mc-ava mc-3">KD</div>
@@ -748,6 +765,7 @@ footer b{color:#B7BEC5}
         <div class="mc-role">Adaptive Skill Development Tracker — gap analysis, hybrid recommendation engine</div>
         <div class="mc-id">IT22026002</div>
         <a class="mc-email" href="mailto:it22026002@my.sliit.lk">it22026002@my.sliit.lk</a>
+        <a class="mc-phone" href="tel:+94766424032">+94 76 642 4032</a>
       </div>
     </div>
   </div>
@@ -778,11 +796,23 @@ footer b{color:#B7BEC5}
       <div class="c-card">
         <span>RESEARCH TEAM</span>
         <h5>Rajapaksha · Rathnayake · Dalpathadu</h5>
-        <a href="mailto:it22026002@my.sliit.lk">it22026002@my.sliit.lk</a><br/>
-        <a href="mailto:it22917652@my.sliit.lk">it22917652@my.sliit.lk</a><br/>
-        <a href="mailto:it22296382@my.sliit.lk">it22296382@my.sliit.lk</a>
+        <a href="mailto:it22026002@my.sliit.lk">it22026002@my.sliit.lk</a> · <a href="tel:+94766424032">+94 76 642 4032</a><br/>
+        <a href="mailto:it22917652@my.sliit.lk">it22917652@my.sliit.lk</a> · <a href="tel:+94760538789">+94 76 053 8789</a><br/>
+        <a href="mailto:it22296382@my.sliit.lk">it22296382@my.sliit.lk</a> · <a href="tel:+94776855942">+94 77 685 5942</a>
       </div>
     </div>
+
+    <form class="contact-form" id="contactForm" action="https://formspree.io/f/mrpelaok" method="POST">
+      <h3>Send us a message</h3>
+      <div class="form-grid">
+        <div><label for="cf-name">NAME</label><input id="cf-name" type="text" name="name" placeholder="Your name" required></div>
+        <div><label for="cf-email">EMAIL</label><input id="cf-email" type="email" name="email" placeholder="you@example.com" required></div>
+        <div class="full"><label for="cf-subject">SUBJECT</label><input id="cf-subject" type="text" name="subject" placeholder="Research, collaboration, pilot deployment…"></div>
+        <div class="full"><label for="cf-message">MESSAGE</label><textarea id="cf-message" name="message" placeholder="How can we help?" required></textarea></div>
+      </div>
+      <button type="submit" class="btn btn-amber">Send message →</button>
+      <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+    </form>
   </div>
 </section>
 
@@ -796,6 +826,19 @@ document.getElementById('navToggle').addEventListener('click',function(){
 });
 document.querySelectorAll('.nav-links a').forEach(function(a){
   a.addEventListener('click',function(){document.getElementById('navLinks').classList.remove('open');});
+});
+var cf=document.getElementById('contactForm');
+cf.addEventListener('submit',function(e){
+  e.preventDefault();
+  var st=document.getElementById('formStatus'),btn=cf.querySelector('button');
+  btn.disabled=true;st.className='form-status';st.textContent='Sending…';
+  fetch(cf.action,{method:'POST',body:new FormData(cf),headers:{'Accept':'application/json'}})
+    .then(function(r){
+      if(r.ok){cf.reset();st.className='form-status ok';st.textContent='Thanks! Your message has been sent.';}
+      else{throw new Error();}
+    })
+    .catch(function(){st.className='form-status err';st.textContent='Something went wrong. Please try again or email us directly.';})
+    .finally(function(){btn.disabled=false;});
 });
 </script>
 </body>
